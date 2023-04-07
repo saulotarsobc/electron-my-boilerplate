@@ -1,5 +1,5 @@
-const { ipcRenderer } = require('electron');
+// const { ipcRenderer } = require('electron');
 
-console.log(ipcRenderer);
+// console.log(ipcRenderer);
 
-alert('JS ok!');
+// alert('JS ok!');
