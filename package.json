@@ -17,6 +17,39 @@
     "release": "electron-builder",
     "sass": "sass -w view/scss/main.scss view/css/main.min.css -s compressed"
   },
+  "build": {
+    "productName": "Electron My Boilerplate",
+    "appId": "com.electron.my.boilerplate",
+    "win": {
+      "publish": [
+        "github"
+      ],
+      "publisherName": "Saulo INC",
+      "target": "NSIS"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "category": "Utilities",
+      "target": "AppImage",
+      "publish": [
+        "github"
+      ]
+    },
+    "mac": {
+      "target": {
+        "target": "dmg",
+        "arch": [
+          "universal"
+        ]
+      },
+      "publish": [
+        "github"
+      ]
+    }
+  },
   "repository": "https://github.com/saulotarsobc/electron-my-boilerplate.git",
   "author": "Saulo Costa <saulotarsobc@gmail.com>",
   "license": "MIT",
