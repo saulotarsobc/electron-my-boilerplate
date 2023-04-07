@@ -59,6 +59,7 @@
     "sass": "^1.61.0"
   },
   "dependencies": {
-    "@electron/remote": "^2.0.9"
+    "@electron/remote": "^2.0.9",
+    "@iconscout/unicons": "^4.0.8"
   }
 }

@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const remoteMain = require("@electron/remote/main").initialize();
+// const remoteMain = require("@electron/remote/main");
+require("@electron/remote/main").initialize();
 
 let main;
 
@@ -20,7 +21,7 @@ const createWindow = () => {
     main.loadFile(path.join(__dirname, './view/index.html'));
     main.setTitle(`Electron My Boilerplate`);
     // main.webContents.openDevTools();
-    remoteMain.enable(main.webContents);
+    // remoteMain.enable(main.webContents);
 };
 
 app.on('ready', () => {
