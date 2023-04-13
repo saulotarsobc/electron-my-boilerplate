@@ -15,8 +15,7 @@
     "publish-linux": "electron-builder --linux -p always",
     "postinstall": "electron-builder install-app-deps",
     "release": "electron-builder",
-    "sass": "sass -w view/scss/main.scss view/css/main.min.css -s compressed",
-    "tail": "npx tailwindcss -i tailwind/main.css -o view/css/tailwind.css --watch"
+    "sass": "sass -w view/scss/main.scss view/css/main.min.css -s compressed"
   },
   "build": {
     "productName": "Electron My Boilerplate",
